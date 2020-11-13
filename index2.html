@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>OEM Parts Trader</title>
+  <link rel="stylesheet" href="css/my-css.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+</head>
+<body>
+  <div id="app">
+    <!-- Main Panel -->
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div class="page page-home">
+        <!-- Header -->
+        <div class="header">
+          <div class="navbar-inner">
+            <div class="title">OEM Parts Trader Onboarding</div>
+          </div>
+        </div>
+        <!-- Body -->
+        <div class="page-content">
+          <div id="profile">
+            <div class="title-l">Profile</div>
+              <div class="body" id='profile_body'>
+                <div class="list-block">
+                  <ul>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner col">
+                          <label class="label bold" for="yard_name">Business Name</label>
+                          <input type="text" id="yard_name" placeholder="Business name">
+                          <label class="label" for="alias">Alias</label>
+                          <input type="text" id="alias" placeholder="Alias">
+                          <label class="label" for="phone_number">Phone Number</label>
+                          <input type="text" id="phone_number" placeholder="Phone Number">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner col">
+                          <label class="label" for="address">Address</label>
+                          <input type="text" id="address" placeholder="Address">
+                          <label class="label" for="city">City</label>
+                          <input type="text" id="city" placeholder="City">
+                          <label class="label" for="state">State</label>
+                          <input type="text" id="state" placeholder="XX">
+                          <label class="label" for="zip">Zip</label>
+                          <input type="text" id="zip" placeholder="Zip">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content center_radios">
+                        <div class="item-inner">
+                          <input type="radio" name="ims_type" value="Checkmate">
+                          <label class="label radio">Checkmate</label>
+                          <input type="radio" name="ims_type" value="Powerlink">
+                          <label class="label radio">Powerlink</label>
+                          <input type="radio" name="ims_type" value="Pinnacle">
+                          <label class="label radio">Pinnacle</label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>  
+          <div class="middle">
+            <div id="users">
+              <div class="title-m">Users</div>
+              <div class="body-u" id='user_body'>
+                <table id="userTable" class=" table order-list">
+                  <thead>
+                      <tr>
+                          <td>Username</td>
+                          <td>Password</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><input type="text" name="userName" class="form-control" /></td>
+                          <td><input type="mail" name="password"  class="form-control"/></td>
+                          <td><a class="deleteRow"></a></td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td colspan="3" style="text-align: center;">
+                              <input type="button" class="btn-lg" id="addrow" value="Add Row" />
+                          </td>
+                      </tr>
+                      <tr>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div> 
+          </div>  
+          <div id="contacts">
+            <div class="title-m">Contacts</div>
+            <div class="body-c" id='contact_body'>
+              <table id="contactTable" class="">
+                <thead class="contact_header">
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>EXT</th>
+                    <th>Cell</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody class="contact_table">
+                  <tr>
+                    <th class="long-th">Billing</th>
+                    <td><input type="text" id="billingName" /></td>
+                    <td><input type="text" id="billingPhone" /></td>
+                    <td><input type="phone" id="billingEXT" class="ext" /></td>
+                    <td><input type="phone" id="billingCell" /></td>
+                    <td><input type="email" id="billingEmail" class="email" /></td>
+                  </tr>
+                  <tr>
+                    <th class="long-th">Orders</th>
+                    <td><input type="text" id="ordersName" /></td>
+                    <td><input type="text" id="ordersPhone" /></td>
+                    <td><input type="phone" id="ordersEXT" class="ext" /></td>
+                    <td><input type="phone" id="ordersCell" /></td>
+                    <td><input type="email" id="ordersEmail" class="email" /></td>
+                  </tr>
+                  <tr>
+                    <th class="long-th">IT</th>
+                    <td><input type="text" id="itName" /></td>
+                    <td><input type="text" id="itPhone" /></td>
+                    <td><input type="phone" id="itEXT" class="ext" /></td>
+                    <td><input type="phone" id="itCell" /></td>
+                    <td><input type="email" id="itEmail" class="email" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div> 
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/my-app.js"></script>
+</body>
+</html>

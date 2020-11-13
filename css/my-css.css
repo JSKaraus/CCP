@@ -1,0 +1,38 @@
+*, body {
+    margin: 0;
+    padding:0
+}
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+#containerDiv {
+    width: 25%;
+    min-width: 15%;
+    max-width: 25%;
+    height: 465px;
+    min-height: 465px;
+    max-height: 465px;
+    float: left;
+}
+
+.think_owl {
+    max-width: 85%;
+    min-width: 75%;
+    min-height: 800px;
+    max-height: 1000px;
+    height: 800px;
+    float: left;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    resize: both;
+    overflow: auto;
+}
